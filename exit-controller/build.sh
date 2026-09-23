@@ -3,7 +3,9 @@ set -euo pipefail
 ROOT=$(cd "$(dirname "$0")" && pwd)
 SDK=${ANDROID_SDK_ROOT:-${ANDROID_HOME:-$HOME/Library/Android/sdk}}
 BT="$SDK/build-tools/37.0.0"
-JAR="$SDK/platforms/android-37/android.jar"
+PLATFORM=${ANDROID_PLATFORM:-android-37}
+if [[ ! -f "$SDK/platforms/$PLATFORM/android.jar" && "$PLATFORM" == android-37 ]]; then PLATFORM=android-37.0; fi
+JAR="$SDK/platforms/$PLATFORM/android.jar"
 OUT="$ROOT/build"
 mkdir -p "$OUT" "$OUT/signing"
 chmod 700 "$OUT/signing"

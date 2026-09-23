@@ -10,4 +10,9 @@ printf '%s  %s\n' "$KOTLIN_SHA256" "$RUNNER_TEMP/kotlin.zip" | sha256sum --check
 unzip -q "$RUNNER_TEMP/kotlin.zip" -d "$RUNNER_TEMP/kotlin"
 printf '%s\n' "$RUNNER_TEMP/kotlin/kotlinc/bin" >> "$GITHUB_PATH"
 printf 'KOTLIN_STDLIB=%s\n' "$RUNNER_TEMP/kotlin/kotlinc/lib/kotlin-stdlib.jar" >> "$GITHUB_ENV"
-sdkmanager 'platforms;android-37' 'build-tools;37.0.0'
+SDK=${ANDROID_SDK_ROOT:-${ANDROID_HOME:-/usr/local/lib/android/sdk}}
+PLATFORM=android-37.0
+if [[ ! -f "$SDK/platforms/$PLATFORM/android.jar" || ! -d "$SDK/build-tools/37.0.0" ]]; then
+    "$SDK/cmdline-tools/latest/bin/sdkmanager" "platforms;$PLATFORM" 'build-tools;37.0.0'
+fi
+printf 'ANDROID_PLATFORM=%s\n' "$PLATFORM" >> "$GITHUB_ENV"
