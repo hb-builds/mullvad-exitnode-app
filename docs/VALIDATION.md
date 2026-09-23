@@ -21,6 +21,7 @@ On a GrapheneOS Pixel 10 Pro Fold and an Ubuntu 24.04 ARM64 gateway:
 - IPv4/IPv6 Mullvad egress, location-change rollback and tunnel-down forwarding/DNS blocking.
 - Unfolded globe/card layout, tab and swipe navigation, content-blocking off/on restoration, recenter control and Vanadium launch.
 - Passive last-checked notification and absence of an app background service.
+- Version 1.3 installed over the existing app with pairing preserved and live gateway status. Four consecutive forward/reverse card swipes reached the expected pages.
 
 Version 1.3 fixes hard-coded gateway addresses, stale responses/caches after re-pairing, destroyed-screen callbacks, a swipe cleanup issue, repeated picker rebuilding during status polls, and config validation relying on Python assertions.
 
