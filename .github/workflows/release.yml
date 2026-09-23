@@ -1,0 +1,51 @@
+name: Signed release
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: signed-release
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.ref == 'refs/heads/main'
+    environment: release
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: tools/check.sh
+      - run: tools/setup-ci.sh
+      - name: Restore release signing key
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          test -n "$KEYSTORE_BASE64" && test -n "$KEYSTORE_PASSWORD"
+          umask 077
+          mkdir -p "$RUNNER_TEMP/release-signing"
+          printf '%s' "$KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/release-signing/release.jks"
+          printf '%s' "$KEYSTORE_PASSWORD" > "$RUNNER_TEMP/release-signing/password"
+          printf 'SIGNING_KEYSTORE=%s\n' "$RUNNER_TEMP/release-signing/release.jks" >> "$GITHUB_ENV"
+          printf 'SIGNING_PASSWORD_FILE=%s\n' "$RUNNER_TEMP/release-signing/password" >> "$GITHUB_ENV"
+      - run: exit-controller/build.sh
+      - name: Package release
+        run: tools/package-release.sh
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION=$(cat build/release-version)
+          gh release create "$VERSION" build/release/* --target "$GITHUB_SHA" \
+            --title "Mullvad Exit Node $VERSION" --generate-notes
+      - name: Remove signing files
+        if: always()
+        run: rm -rf "$RUNNER_TEMP/release-signing"

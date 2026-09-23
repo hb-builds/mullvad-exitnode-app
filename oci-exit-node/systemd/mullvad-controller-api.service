@@ -1,0 +1,29 @@
+[Unit]
+Description=Tailscale-only exit controller HTTPS API
+Requires=mullvad-controller-broker.service tailscaled-mullvad-exit.service
+After=mullvad-controller-broker.service tailscaled-mullvad-exit.service
+
+[Service]
+User=mullvad-controller
+Group=mullvad-controller
+NetworkNamespacePath=/run/netns/mullvad-exit
+ExecStart=/usr/bin/python3 /usr/local/libexec/mullvad-controller-api.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+RestrictAddressFamilies=AF_UNIX AF_INET
+CapabilityBoundingSet=
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

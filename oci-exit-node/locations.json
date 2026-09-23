@@ -1,0 +1,4426 @@
+[
+  {
+    "hostname": "al-tia-wg-001",
+    "country_code": "al",
+    "country_name": "Albania",
+    "city_code": "tia",
+    "city_name": "Tirana",
+    "active": true
+  },
+  {
+    "hostname": "al-tia-wg-002",
+    "country_code": "al",
+    "country_name": "Albania",
+    "city_code": "tia",
+    "city_name": "Tirana",
+    "active": true
+  },
+  {
+    "hostname": "al-tia-wg-003",
+    "country_code": "al",
+    "country_name": "Albania",
+    "city_code": "tia",
+    "city_name": "Tirana",
+    "active": true
+  },
+  {
+    "hostname": "al-tia-wg-004",
+    "country_code": "al",
+    "country_name": "Albania",
+    "city_code": "tia",
+    "city_name": "Tirana",
+    "active": true
+  },
+  {
+    "hostname": "ar-bue-wg-001",
+    "country_code": "ar",
+    "country_name": "Argentina",
+    "city_code": "bue",
+    "city_name": "Buenos Aires",
+    "active": true
+  },
+  {
+    "hostname": "ar-bue-wg-002",
+    "country_code": "ar",
+    "country_name": "Argentina",
+    "city_code": "bue",
+    "city_name": "Buenos Aires",
+    "active": true
+  },
+  {
+    "hostname": "at-vie-wg-001",
+    "country_code": "at",
+    "country_name": "Austria",
+    "city_code": "vie",
+    "city_name": "Vienna",
+    "active": true
+  },
+  {
+    "hostname": "at-vie-wg-002",
+    "country_code": "at",
+    "country_name": "Austria",
+    "city_code": "vie",
+    "city_name": "Vienna",
+    "active": true
+  },
+  {
+    "hostname": "at-vie-wg-003",
+    "country_code": "at",
+    "country_name": "Austria",
+    "city_code": "vie",
+    "city_name": "Vienna",
+    "active": true
+  },
+  {
+    "hostname": "at-vie-wg-101",
+    "country_code": "at",
+    "country_name": "Austria",
+    "city_code": "vie",
+    "city_name": "Vienna",
+    "active": true
+  },
+  {
+    "hostname": "at-vie-wg-102",
+    "country_code": "at",
+    "country_name": "Austria",
+    "city_code": "vie",
+    "city_name": "Vienna",
+    "active": true
+  },
+  {
+    "hostname": "au-adl-wg-301",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "adl",
+    "city_name": "Adelaide",
+    "active": true
+  },
+  {
+    "hostname": "au-adl-wg-302",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "adl",
+    "city_name": "Adelaide",
+    "active": true
+  },
+  {
+    "hostname": "au-adl-wg-303",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "adl",
+    "city_name": "Adelaide",
+    "active": true
+  },
+  {
+    "hostname": "au-bne-wg-301",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "bne",
+    "city_name": "Brisbane",
+    "active": true
+  },
+  {
+    "hostname": "au-bne-wg-302",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "bne",
+    "city_name": "Brisbane",
+    "active": true
+  },
+  {
+    "hostname": "au-bne-wg-303",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "bne",
+    "city_name": "Brisbane",
+    "active": true
+  },
+  {
+    "hostname": "au-mel-wg-401",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "mel",
+    "city_name": "Melbourne",
+    "active": true
+  },
+  {
+    "hostname": "au-mel-wg-402",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "mel",
+    "city_name": "Melbourne",
+    "active": false
+  },
+  {
+    "hostname": "au-mel-wg-403",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "mel",
+    "city_name": "Melbourne",
+    "active": true
+  },
+  {
+    "hostname": "au-per-wg-301",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "per",
+    "city_name": "Perth",
+    "active": true
+  },
+  {
+    "hostname": "au-per-wg-302",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "per",
+    "city_name": "Perth",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-001",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-002",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-003",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-101",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-102",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-103",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-104",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-301",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-302",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-303",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "au-syd-wg-304",
+    "country_code": "au",
+    "country_name": "Australia",
+    "city_code": "syd",
+    "city_name": "Sydney",
+    "active": true
+  },
+  {
+    "hostname": "be-bru-wg-101",
+    "country_code": "be",
+    "country_name": "Belgium",
+    "city_code": "bru",
+    "city_name": "Brussels",
+    "active": true
+  },
+  {
+    "hostname": "be-bru-wg-102",
+    "country_code": "be",
+    "country_name": "Belgium",
+    "city_code": "bru",
+    "city_name": "Brussels",
+    "active": true
+  },
+  {
+    "hostname": "be-bru-wg-103",
+    "country_code": "be",
+    "country_name": "Belgium",
+    "city_code": "bru",
+    "city_name": "Brussels",
+    "active": true
+  },
+  {
+    "hostname": "bg-sof-wg-001",
+    "country_code": "bg",
+    "country_name": "Bulgaria",
+    "city_code": "sof",
+    "city_name": "Sofia",
+    "active": true
+  },
+  {
+    "hostname": "bg-sof-wg-002",
+    "country_code": "bg",
+    "country_name": "Bulgaria",
+    "city_code": "sof",
+    "city_name": "Sofia",
+    "active": true
+  },
+  {
+    "hostname": "bg-sof-wg-003",
+    "country_code": "bg",
+    "country_name": "Bulgaria",
+    "city_code": "sof",
+    "city_name": "Sofia",
+    "active": true
+  },
+  {
+    "hostname": "br-for-wg-001",
+    "country_code": "br",
+    "country_name": "Brazil",
+    "city_code": "for",
+    "city_name": "Fortaleza",
+    "active": true
+  },
+  {
+    "hostname": "br-for-wg-002",
+    "country_code": "br",
+    "country_name": "Brazil",
+    "city_code": "for",
+    "city_name": "Fortaleza",
+    "active": true
+  },
+  {
+    "hostname": "br-sao-wg-201",
+    "country_code": "br",
+    "country_name": "Brazil",
+    "city_code": "sao",
+    "city_name": "Sao Paulo",
+    "active": true
+  },
+  {
+    "hostname": "br-sao-wg-202",
+    "country_code": "br",
+    "country_name": "Brazil",
+    "city_code": "sao",
+    "city_name": "Sao Paulo",
+    "active": true
+  },
+  {
+    "hostname": "br-sao-wg-302",
+    "country_code": "br",
+    "country_name": "Brazil",
+    "city_code": "sao",
+    "city_name": "Sao Paulo",
+    "active": false
+  },
+  {
+    "hostname": "br-sao-wg-303",
+    "country_code": "br",
+    "country_name": "Brazil",
+    "city_code": "sao",
+    "city_name": "Sao Paulo",
+    "active": true
+  },
+  {
+    "hostname": "br-sao-wg-304",
+    "country_code": "br",
+    "country_name": "Brazil",
+    "city_code": "sao",
+    "city_name": "Sao Paulo",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-001",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-002",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-003",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-004",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-201",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-202",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-301",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-302",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-303",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-304",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-305",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-306",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-307",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-mtr-wg-308",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "mtr",
+    "city_name": "Montreal",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-001",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-002",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-201",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-202",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-203",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-204",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-205",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-206",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-tor-wg-207",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "tor",
+    "city_name": "Toronto",
+    "active": true
+  },
+  {
+    "hostname": "ca-van-wg-201",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "van",
+    "city_name": "Vancouver",
+    "active": true
+  },
+  {
+    "hostname": "ca-van-wg-202",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "van",
+    "city_name": "Vancouver",
+    "active": true
+  },
+  {
+    "hostname": "ca-van-wg-301",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "van",
+    "city_name": "Vancouver",
+    "active": true
+  },
+  {
+    "hostname": "ca-van-wg-302",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "van",
+    "city_name": "Vancouver",
+    "active": true
+  },
+  {
+    "hostname": "ca-yyc-wg-201",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "yyc",
+    "city_name": "Calgary",
+    "active": true
+  },
+  {
+    "hostname": "ca-yyc-wg-202",
+    "country_code": "ca",
+    "country_name": "Canada",
+    "city_code": "yyc",
+    "city_name": "Calgary",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-001",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-002",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-003",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-004",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-201",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-202",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-401",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-402",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-403",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-404",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-501",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-502",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-503",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "ch-zrh-wg-504",
+    "country_code": "ch",
+    "country_name": "Switzerland",
+    "city_code": "zrh",
+    "city_name": "Zurich",
+    "active": true
+  },
+  {
+    "hostname": "cl-scl-wg-001",
+    "country_code": "cl",
+    "country_name": "Chile",
+    "city_code": "scl",
+    "city_name": "Santiago",
+    "active": true
+  },
+  {
+    "hostname": "cl-scl-wg-002",
+    "country_code": "cl",
+    "country_name": "Chile",
+    "city_code": "scl",
+    "city_name": "Santiago",
+    "active": true
+  },
+  {
+    "hostname": "co-bog-wg-001",
+    "country_code": "co",
+    "country_name": "Colombia",
+    "city_code": "bog",
+    "city_name": "Bogota",
+    "active": true
+  },
+  {
+    "hostname": "co-bog-wg-002",
+    "country_code": "co",
+    "country_name": "Colombia",
+    "city_code": "bog",
+    "city_name": "Bogota",
+    "active": true
+  },
+  {
+    "hostname": "cy-nic-wg-001",
+    "country_code": "cy",
+    "country_name": "Cyprus",
+    "city_code": "nic",
+    "city_name": "Nicosia",
+    "active": true
+  },
+  {
+    "hostname": "cy-nic-wg-002",
+    "country_code": "cy",
+    "country_name": "Cyprus",
+    "city_code": "nic",
+    "city_name": "Nicosia",
+    "active": true
+  },
+  {
+    "hostname": "cz-prg-wg-101",
+    "country_code": "cz",
+    "country_name": "Czech Republic",
+    "city_code": "prg",
+    "city_name": "Prague",
+    "active": true
+  },
+  {
+    "hostname": "cz-prg-wg-102",
+    "country_code": "cz",
+    "country_name": "Czech Republic",
+    "city_code": "prg",
+    "city_name": "Prague",
+    "active": true
+  },
+  {
+    "hostname": "cz-prg-wg-201",
+    "country_code": "cz",
+    "country_name": "Czech Republic",
+    "city_code": "prg",
+    "city_name": "Prague",
+    "active": true
+  },
+  {
+    "hostname": "cz-prg-wg-202",
+    "country_code": "cz",
+    "country_name": "Czech Republic",
+    "city_code": "prg",
+    "city_name": "Prague",
+    "active": true
+  },
+  {
+    "hostname": "de-ber-wg-001",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "ber",
+    "city_name": "Berlin",
+    "active": true
+  },
+  {
+    "hostname": "de-ber-wg-002",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "ber",
+    "city_name": "Berlin",
+    "active": true
+  },
+  {
+    "hostname": "de-ber-wg-003",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "ber",
+    "city_name": "Berlin",
+    "active": true
+  },
+  {
+    "hostname": "de-ber-wg-004",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "ber",
+    "city_name": "Berlin",
+    "active": true
+  },
+  {
+    "hostname": "de-ber-wg-101",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "ber",
+    "city_name": "Berlin",
+    "active": true
+  },
+  {
+    "hostname": "de-ber-wg-102",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "ber",
+    "city_name": "Berlin",
+    "active": true
+  },
+  {
+    "hostname": "de-ber-wg-103",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "ber",
+    "city_name": "Berlin",
+    "active": true
+  },
+  {
+    "hostname": "de-dus-wg-101",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "dus",
+    "city_name": "Dusseldorf",
+    "active": true
+  },
+  {
+    "hostname": "de-dus-wg-102",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "dus",
+    "city_name": "Dusseldorf",
+    "active": true
+  },
+  {
+    "hostname": "de-dus-wg-103",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "dus",
+    "city_name": "Dusseldorf",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-001",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-002",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-003",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-004",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-005",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-101",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-102",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-103",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-104",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-201",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-202",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-203",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-401",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": false
+  },
+  {
+    "hostname": "de-fra-wg-402",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": false
+  },
+  {
+    "hostname": "de-fra-wg-403",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": false
+  },
+  {
+    "hostname": "de-fra-wg-404",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-405",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "de-fra-wg-406",
+    "country_code": "de",
+    "country_name": "Germany",
+    "city_code": "fra",
+    "city_name": "Frankfurt",
+    "active": true
+  },
+  {
+    "hostname": "dk-cph-wg-001",
+    "country_code": "dk",
+    "country_name": "Denmark",
+    "city_code": "cph",
+    "city_name": "Copenhagen",
+    "active": true
+  },
+  {
+    "hostname": "dk-cph-wg-002",
+    "country_code": "dk",
+    "country_name": "Denmark",
+    "city_code": "cph",
+    "city_name": "Copenhagen",
+    "active": true
+  },
+  {
+    "hostname": "dk-cph-wg-101",
+    "country_code": "dk",
+    "country_name": "Denmark",
+    "city_code": "cph",
+    "city_name": "Copenhagen",
+    "active": false
+  },
+  {
+    "hostname": "dk-cph-wg-102",
+    "country_code": "dk",
+    "country_name": "Denmark",
+    "city_code": "cph",
+    "city_name": "Copenhagen",
+    "active": true
+  },
+  {
+    "hostname": "dk-cph-wg-103",
+    "country_code": "dk",
+    "country_name": "Denmark",
+    "city_code": "cph",
+    "city_name": "Copenhagen",
+    "active": false
+  },
+  {
+    "hostname": "dk-cph-wg-401",
+    "country_code": "dk",
+    "country_name": "Denmark",
+    "city_code": "cph",
+    "city_name": "Copenhagen",
+    "active": true
+  },
+  {
+    "hostname": "dk-cph-wg-402",
+    "country_code": "dk",
+    "country_name": "Denmark",
+    "city_code": "cph",
+    "city_name": "Copenhagen",
+    "active": true
+  },
+  {
+    "hostname": "ee-tll-wg-101",
+    "country_code": "ee",
+    "country_name": "Estonia",
+    "city_code": "tll",
+    "city_name": "Tallinn",
+    "active": true
+  },
+  {
+    "hostname": "ee-tll-wg-102",
+    "country_code": "ee",
+    "country_name": "Estonia",
+    "city_code": "tll",
+    "city_name": "Tallinn",
+    "active": true
+  },
+  {
+    "hostname": "ee-tll-wg-103",
+    "country_code": "ee",
+    "country_name": "Estonia",
+    "city_code": "tll",
+    "city_name": "Tallinn",
+    "active": true
+  },
+  {
+    "hostname": "es-bcn-wg-001",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "bcn",
+    "city_name": "Barcelona",
+    "active": true
+  },
+  {
+    "hostname": "es-bcn-wg-002",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "bcn",
+    "city_name": "Barcelona",
+    "active": true
+  },
+  {
+    "hostname": "es-bcn-wg-101",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "bcn",
+    "city_name": "Barcelona",
+    "active": true
+  },
+  {
+    "hostname": "es-bcn-wg-102",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "bcn",
+    "city_name": "Barcelona",
+    "active": true
+  },
+  {
+    "hostname": "es-mad-wg-101",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "mad",
+    "city_name": "Madrid",
+    "active": true
+  },
+  {
+    "hostname": "es-mad-wg-102",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "mad",
+    "city_name": "Madrid",
+    "active": true
+  },
+  {
+    "hostname": "es-mad-wg-203",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "mad",
+    "city_name": "Madrid",
+    "active": true
+  },
+  {
+    "hostname": "es-mad-wg-204",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "mad",
+    "city_name": "Madrid",
+    "active": true
+  },
+  {
+    "hostname": "es-mad-wg-205",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "mad",
+    "city_name": "Madrid",
+    "active": true
+  },
+  {
+    "hostname": "es-vlc-wg-001",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "vlc",
+    "city_name": "Valencia",
+    "active": true
+  },
+  {
+    "hostname": "es-vlc-wg-002",
+    "country_code": "es",
+    "country_name": "Spain",
+    "city_code": "vlc",
+    "city_name": "Valencia",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-001",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": false
+  },
+  {
+    "hostname": "fi-hel-wg-002",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-003",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-101",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-102",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-103",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-104",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-201",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-202",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fi-hel-wg-203",
+    "country_code": "fi",
+    "country_name": "Finland",
+    "city_code": "hel",
+    "city_name": "Helsinki",
+    "active": true
+  },
+  {
+    "hostname": "fr-bod-wg-001",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "bod",
+    "city_name": "Bordeaux",
+    "active": true
+  },
+  {
+    "hostname": "fr-bod-wg-002",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "bod",
+    "city_name": "Bordeaux",
+    "active": true
+  },
+  {
+    "hostname": "fr-mrs-wg-001",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "mrs",
+    "city_name": "Marseille",
+    "active": true
+  },
+  {
+    "hostname": "fr-mrs-wg-002",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "mrs",
+    "city_name": "Marseille",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-001",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-002",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-003",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-004",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-101",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-102",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-103",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-301",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "fr-par-wg-302",
+    "country_code": "fr",
+    "country_name": "France",
+    "city_code": "par",
+    "city_name": "Paris",
+    "active": true
+  },
+  {
+    "hostname": "gb-glw-wg-001",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "glw",
+    "city_name": "Glasgow",
+    "active": true
+  },
+  {
+    "hostname": "gb-glw-wg-002",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "glw",
+    "city_name": "Glasgow",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-001",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-002",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-003",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-004",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-005",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-006",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-007",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-008",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-101",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-102",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-103",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-305",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-306",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-lon-wg-308",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "lon",
+    "city_name": "London",
+    "active": true
+  },
+  {
+    "hostname": "gb-mnc-wg-001",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "mnc",
+    "city_name": "Manchester",
+    "active": true
+  },
+  {
+    "hostname": "gb-mnc-wg-002",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "mnc",
+    "city_name": "Manchester",
+    "active": true
+  },
+  {
+    "hostname": "gb-mnc-wg-003",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "mnc",
+    "city_name": "Manchester",
+    "active": true
+  },
+  {
+    "hostname": "gb-mnc-wg-004",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "mnc",
+    "city_name": "Manchester",
+    "active": true
+  },
+  {
+    "hostname": "gb-mnc-wg-201",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "mnc",
+    "city_name": "Manchester",
+    "active": true
+  },
+  {
+    "hostname": "gb-mnc-wg-202",
+    "country_code": "gb",
+    "country_name": "UK",
+    "city_code": "mnc",
+    "city_name": "Manchester",
+    "active": true
+  },
+  {
+    "hostname": "gr-ath-wg-101",
+    "country_code": "gr",
+    "country_name": "Greece",
+    "city_code": "ath",
+    "city_name": "Athens",
+    "active": true
+  },
+  {
+    "hostname": "gr-ath-wg-102",
+    "country_code": "gr",
+    "country_name": "Greece",
+    "city_code": "ath",
+    "city_name": "Athens",
+    "active": true
+  },
+  {
+    "hostname": "hk-hkg-wg-201",
+    "country_code": "hk",
+    "country_name": "Hong Kong",
+    "city_code": "hkg",
+    "city_name": "Hong Kong",
+    "active": true
+  },
+  {
+    "hostname": "hk-hkg-wg-203",
+    "country_code": "hk",
+    "country_name": "Hong Kong",
+    "city_code": "hkg",
+    "city_name": "Hong Kong",
+    "active": true
+  },
+  {
+    "hostname": "hk-hkg-wg-301",
+    "country_code": "hk",
+    "country_name": "Hong Kong",
+    "city_code": "hkg",
+    "city_name": "Hong Kong",
+    "active": true
+  },
+  {
+    "hostname": "hk-hkg-wg-302",
+    "country_code": "hk",
+    "country_name": "Hong Kong",
+    "city_code": "hkg",
+    "city_name": "Hong Kong",
+    "active": true
+  },
+  {
+    "hostname": "hk-hkg-wg-303",
+    "country_code": "hk",
+    "country_name": "Hong Kong",
+    "city_code": "hkg",
+    "city_name": "Hong Kong",
+    "active": true
+  },
+  {
+    "hostname": "hr-zag-wg-001",
+    "country_code": "hr",
+    "country_name": "Croatia",
+    "city_code": "zag",
+    "city_name": "Zagreb",
+    "active": true
+  },
+  {
+    "hostname": "hr-zag-wg-002",
+    "country_code": "hr",
+    "country_name": "Croatia",
+    "city_code": "zag",
+    "city_name": "Zagreb",
+    "active": true
+  },
+  {
+    "hostname": "hu-bud-wg-101",
+    "country_code": "hu",
+    "country_name": "Hungary",
+    "city_code": "bud",
+    "city_name": "Budapest",
+    "active": true
+  },
+  {
+    "hostname": "hu-bud-wg-102",
+    "country_code": "hu",
+    "country_name": "Hungary",
+    "city_code": "bud",
+    "city_name": "Budapest",
+    "active": true
+  },
+  {
+    "hostname": "hu-bud-wg-201",
+    "country_code": "hu",
+    "country_name": "Hungary",
+    "city_code": "bud",
+    "city_name": "Budapest",
+    "active": true
+  },
+  {
+    "hostname": "hu-bud-wg-202",
+    "country_code": "hu",
+    "country_name": "Hungary",
+    "city_code": "bud",
+    "city_name": "Budapest",
+    "active": true
+  },
+  {
+    "hostname": "id-jpu-wg-001",
+    "country_code": "id",
+    "country_name": "Indonesia",
+    "city_code": "jpu",
+    "city_name": "Jakarta",
+    "active": true
+  },
+  {
+    "hostname": "id-jpu-wg-002",
+    "country_code": "id",
+    "country_name": "Indonesia",
+    "city_code": "jpu",
+    "city_name": "Jakarta",
+    "active": true
+  },
+  {
+    "hostname": "ie-dub-wg-101",
+    "country_code": "ie",
+    "country_name": "Ireland",
+    "city_code": "dub",
+    "city_name": "Dublin",
+    "active": true
+  },
+  {
+    "hostname": "ie-dub-wg-102",
+    "country_code": "ie",
+    "country_name": "Ireland",
+    "city_code": "dub",
+    "city_name": "Dublin",
+    "active": true
+  },
+  {
+    "hostname": "ie-dub-wg-103",
+    "country_code": "ie",
+    "country_name": "Ireland",
+    "city_code": "dub",
+    "city_name": "Dublin",
+    "active": true
+  },
+  {
+    "hostname": "il-tlv-wg-101",
+    "country_code": "il",
+    "country_name": "Israel",
+    "city_code": "tlv",
+    "city_name": "Tel Aviv",
+    "active": true
+  },
+  {
+    "hostname": "il-tlv-wg-102",
+    "country_code": "il",
+    "country_name": "Israel",
+    "city_code": "tlv",
+    "city_name": "Tel Aviv",
+    "active": true
+  },
+  {
+    "hostname": "il-tlv-wg-103",
+    "country_code": "il",
+    "country_name": "Israel",
+    "city_code": "tlv",
+    "city_name": "Tel Aviv",
+    "active": true
+  },
+  {
+    "hostname": "it-mil-wg-001",
+    "country_code": "it",
+    "country_name": "Italy",
+    "city_code": "mil",
+    "city_name": "Milan",
+    "active": true
+  },
+  {
+    "hostname": "it-mil-wg-002",
+    "country_code": "it",
+    "country_name": "Italy",
+    "city_code": "mil",
+    "city_name": "Milan",
+    "active": true
+  },
+  {
+    "hostname": "it-mil-wg-003",
+    "country_code": "it",
+    "country_name": "Italy",
+    "city_code": "mil",
+    "city_name": "Milan",
+    "active": true
+  },
+  {
+    "hostname": "it-mil-wg-201",
+    "country_code": "it",
+    "country_name": "Italy",
+    "city_code": "mil",
+    "city_name": "Milan",
+    "active": true
+  },
+  {
+    "hostname": "it-mil-wg-202",
+    "country_code": "it",
+    "country_name": "Italy",
+    "city_code": "mil",
+    "city_name": "Milan",
+    "active": true
+  },
+  {
+    "hostname": "it-pmo-wg-001",
+    "country_code": "it",
+    "country_name": "Italy",
+    "city_code": "pmo",
+    "city_name": "Palermo",
+    "active": true
+  },
+  {
+    "hostname": "it-pmo-wg-002",
+    "country_code": "it",
+    "country_name": "Italy",
+    "city_code": "pmo",
+    "city_name": "Palermo",
+    "active": true
+  },
+  {
+    "hostname": "jp-osa-wg-101",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "osa",
+    "city_name": "Osaka",
+    "active": true
+  },
+  {
+    "hostname": "jp-osa-wg-102",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "osa",
+    "city_name": "Osaka",
+    "active": true
+  },
+  {
+    "hostname": "jp-osa-wg-103",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "osa",
+    "city_name": "Osaka",
+    "active": true
+  },
+  {
+    "hostname": "jp-tyo-wg-001",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "tyo",
+    "city_name": "Tokyo",
+    "active": true
+  },
+  {
+    "hostname": "jp-tyo-wg-002",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "tyo",
+    "city_name": "Tokyo",
+    "active": true
+  },
+  {
+    "hostname": "jp-tyo-wg-201",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "tyo",
+    "city_name": "Tokyo",
+    "active": true
+  },
+  {
+    "hostname": "jp-tyo-wg-202",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "tyo",
+    "city_name": "Tokyo",
+    "active": true
+  },
+  {
+    "hostname": "jp-tyo-wg-203",
+    "country_code": "jp",
+    "country_name": "Japan",
+    "city_code": "tyo",
+    "city_name": "Tokyo",
+    "active": true
+  },
+  {
+    "hostname": "mx-qro-wg-001",
+    "country_code": "mx",
+    "country_name": "Mexico",
+    "city_code": "qro",
+    "city_name": "Queretaro",
+    "active": true
+  },
+  {
+    "hostname": "mx-qro-wg-002",
+    "country_code": "mx",
+    "country_name": "Mexico",
+    "city_code": "qro",
+    "city_name": "Queretaro",
+    "active": true
+  },
+  {
+    "hostname": "mx-qro-wg-003",
+    "country_code": "mx",
+    "country_name": "Mexico",
+    "city_code": "qro",
+    "city_name": "Queretaro",
+    "active": true
+  },
+  {
+    "hostname": "mx-qro-wg-004",
+    "country_code": "mx",
+    "country_name": "Mexico",
+    "city_code": "qro",
+    "city_name": "Queretaro",
+    "active": true
+  },
+  {
+    "hostname": "my-kul-wg-001",
+    "country_code": "my",
+    "country_name": "Malaysia",
+    "city_code": "kul",
+    "city_name": "Kuala Lumpur",
+    "active": true
+  },
+  {
+    "hostname": "my-kul-wg-002",
+    "country_code": "my",
+    "country_name": "Malaysia",
+    "city_code": "kul",
+    "city_name": "Kuala Lumpur",
+    "active": true
+  },
+  {
+    "hostname": "ng-los-wg-001",
+    "country_code": "ng",
+    "country_name": "Nigeria",
+    "city_code": "los",
+    "city_name": "Lagos",
+    "active": true
+  },
+  {
+    "hostname": "ng-los-wg-002",
+    "country_code": "ng",
+    "country_name": "Nigeria",
+    "city_code": "los",
+    "city_name": "Lagos",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-001",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": false
+  },
+  {
+    "hostname": "nl-ams-wg-002",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": false
+  },
+  {
+    "hostname": "nl-ams-wg-003",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": false
+  },
+  {
+    "hostname": "nl-ams-wg-004",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-005",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-006",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-007",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-008",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-201",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-202",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-203",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-301",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-302",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-303",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-401",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "nl-ams-wg-402",
+    "country_code": "nl",
+    "country_name": "Netherlands",
+    "city_code": "ams",
+    "city_name": "Amsterdam",
+    "active": true
+  },
+  {
+    "hostname": "no-osl-wg-001",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "osl",
+    "city_name": "Oslo",
+    "active": true
+  },
+  {
+    "hostname": "no-osl-wg-002",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "osl",
+    "city_name": "Oslo",
+    "active": true
+  },
+  {
+    "hostname": "no-osl-wg-003",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "osl",
+    "city_name": "Oslo",
+    "active": true
+  },
+  {
+    "hostname": "no-osl-wg-101",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "osl",
+    "city_name": "Oslo",
+    "active": true
+  },
+  {
+    "hostname": "no-osl-wg-102",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "osl",
+    "city_name": "Oslo",
+    "active": true
+  },
+  {
+    "hostname": "no-osl-wg-103",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "osl",
+    "city_name": "Oslo",
+    "active": true
+  },
+  {
+    "hostname": "no-svg-wg-001",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "svg",
+    "city_name": "Stavanger",
+    "active": true
+  },
+  {
+    "hostname": "no-svg-wg-002",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "svg",
+    "city_name": "Stavanger",
+    "active": true
+  },
+  {
+    "hostname": "no-svg-wg-003",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "svg",
+    "city_name": "Stavanger",
+    "active": true
+  },
+  {
+    "hostname": "no-svg-wg-004",
+    "country_code": "no",
+    "country_name": "Norway",
+    "city_code": "svg",
+    "city_name": "Stavanger",
+    "active": true
+  },
+  {
+    "hostname": "nz-akl-wg-301",
+    "country_code": "nz",
+    "country_name": "New Zealand",
+    "city_code": "akl",
+    "city_name": "Auckland",
+    "active": true
+  },
+  {
+    "hostname": "nz-akl-wg-302",
+    "country_code": "nz",
+    "country_name": "New Zealand",
+    "city_code": "akl",
+    "city_name": "Auckland",
+    "active": true
+  },
+  {
+    "hostname": "nz-akl-wg-303",
+    "country_code": "nz",
+    "country_name": "New Zealand",
+    "city_code": "akl",
+    "city_name": "Auckland",
+    "active": true
+  },
+  {
+    "hostname": "pe-lim-wg-001",
+    "country_code": "pe",
+    "country_name": "Peru",
+    "city_code": "lim",
+    "city_name": "Lima",
+    "active": true
+  },
+  {
+    "hostname": "pe-lim-wg-002",
+    "country_code": "pe",
+    "country_name": "Peru",
+    "city_code": "lim",
+    "city_name": "Lima",
+    "active": true
+  },
+  {
+    "hostname": "ph-mnl-wg-001",
+    "country_code": "ph",
+    "country_name": "Philippines",
+    "city_code": "mnl",
+    "city_name": "Manila",
+    "active": true
+  },
+  {
+    "hostname": "ph-mnl-wg-002",
+    "country_code": "ph",
+    "country_name": "Philippines",
+    "city_code": "mnl",
+    "city_name": "Manila",
+    "active": true
+  },
+  {
+    "hostname": "pl-waw-wg-101",
+    "country_code": "pl",
+    "country_name": "Poland",
+    "city_code": "waw",
+    "city_name": "Warsaw",
+    "active": true
+  },
+  {
+    "hostname": "pl-waw-wg-102",
+    "country_code": "pl",
+    "country_name": "Poland",
+    "city_code": "waw",
+    "city_name": "Warsaw",
+    "active": true
+  },
+  {
+    "hostname": "pl-waw-wg-103",
+    "country_code": "pl",
+    "country_name": "Poland",
+    "city_code": "waw",
+    "city_name": "Warsaw",
+    "active": true
+  },
+  {
+    "hostname": "pl-waw-wg-201",
+    "country_code": "pl",
+    "country_name": "Poland",
+    "city_code": "waw",
+    "city_name": "Warsaw",
+    "active": true
+  },
+  {
+    "hostname": "pl-waw-wg-202",
+    "country_code": "pl",
+    "country_name": "Poland",
+    "city_code": "waw",
+    "city_name": "Warsaw",
+    "active": true
+  },
+  {
+    "hostname": "pt-lis-wg-201",
+    "country_code": "pt",
+    "country_name": "Portugal",
+    "city_code": "lis",
+    "city_name": "Lisbon",
+    "active": true
+  },
+  {
+    "hostname": "pt-lis-wg-202",
+    "country_code": "pt",
+    "country_name": "Portugal",
+    "city_code": "lis",
+    "city_name": "Lisbon",
+    "active": true
+  },
+  {
+    "hostname": "pt-lis-wg-301",
+    "country_code": "pt",
+    "country_name": "Portugal",
+    "city_code": "lis",
+    "city_name": "Lisbon",
+    "active": true
+  },
+  {
+    "hostname": "pt-lis-wg-302",
+    "country_code": "pt",
+    "country_name": "Portugal",
+    "city_code": "lis",
+    "city_name": "Lisbon",
+    "active": false
+  },
+  {
+    "hostname": "ro-buh-wg-011",
+    "country_code": "ro",
+    "country_name": "Romania",
+    "city_code": "buh",
+    "city_name": "Bucharest",
+    "active": true
+  },
+  {
+    "hostname": "ro-buh-wg-012",
+    "country_code": "ro",
+    "country_name": "Romania",
+    "city_code": "buh",
+    "city_name": "Bucharest",
+    "active": true
+  },
+  {
+    "hostname": "ro-buh-wg-013",
+    "country_code": "ro",
+    "country_name": "Romania",
+    "city_code": "buh",
+    "city_name": "Bucharest",
+    "active": true
+  },
+  {
+    "hostname": "rs-beg-wg-101",
+    "country_code": "rs",
+    "country_name": "Serbia",
+    "city_code": "beg",
+    "city_name": "Belgrade",
+    "active": true
+  },
+  {
+    "hostname": "rs-beg-wg-102",
+    "country_code": "rs",
+    "country_name": "Serbia",
+    "city_code": "beg",
+    "city_name": "Belgrade",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-001",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-002",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-003",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-004",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-005",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-006",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-007",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-008",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-got-wg-101",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "got",
+    "city_name": "Gothenburg",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-001",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-002",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-003",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-004",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-005",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-011",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-012",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-101",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": false
+  },
+  {
+    "hostname": "se-mma-wg-102",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-103",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-111",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-mma-wg-112",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "mma",
+    "city_name": "Malm\u00f6",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-001",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-002",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-003",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-007",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-008",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-009",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-010",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-011",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-201",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-202",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-203",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-204",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-205",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-206",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-207",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-208",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "se-sto-wg-209",
+    "country_code": "se",
+    "country_name": "Sweden",
+    "city_code": "sto",
+    "city_name": "Stockholm",
+    "active": true
+  },
+  {
+    "hostname": "sg-sin-wg-001",
+    "country_code": "sg",
+    "country_name": "Singapore",
+    "city_code": "sin",
+    "city_name": "Singapore",
+    "active": true
+  },
+  {
+    "hostname": "sg-sin-wg-002",
+    "country_code": "sg",
+    "country_name": "Singapore",
+    "city_code": "sin",
+    "city_name": "Singapore",
+    "active": true
+  },
+  {
+    "hostname": "sg-sin-wg-003",
+    "country_code": "sg",
+    "country_name": "Singapore",
+    "city_code": "sin",
+    "city_name": "Singapore",
+    "active": true
+  },
+  {
+    "hostname": "sg-sin-wg-101",
+    "country_code": "sg",
+    "country_name": "Singapore",
+    "city_code": "sin",
+    "city_name": "Singapore",
+    "active": false
+  },
+  {
+    "hostname": "sg-sin-wg-102",
+    "country_code": "sg",
+    "country_name": "Singapore",
+    "city_code": "sin",
+    "city_name": "Singapore",
+    "active": true
+  },
+  {
+    "hostname": "sg-sin-wg-103",
+    "country_code": "sg",
+    "country_name": "Singapore",
+    "city_code": "sin",
+    "city_name": "Singapore",
+    "active": false
+  },
+  {
+    "hostname": "si-lju-wg-001",
+    "country_code": "si",
+    "country_name": "Slovenia",
+    "city_code": "lju",
+    "city_name": "Ljubljana",
+    "active": true
+  },
+  {
+    "hostname": "si-lju-wg-002",
+    "country_code": "si",
+    "country_name": "Slovenia",
+    "city_code": "lju",
+    "city_name": "Ljubljana",
+    "active": true
+  },
+  {
+    "hostname": "sk-bts-wg-001",
+    "country_code": "sk",
+    "country_name": "Slovakia",
+    "city_code": "bts",
+    "city_name": "Bratislava",
+    "active": true
+  },
+  {
+    "hostname": "sk-bts-wg-002",
+    "country_code": "sk",
+    "country_name": "Slovakia",
+    "city_code": "bts",
+    "city_name": "Bratislava",
+    "active": true
+  },
+  {
+    "hostname": "th-bkk-wg-001",
+    "country_code": "th",
+    "country_name": "Thailand",
+    "city_code": "bkk",
+    "city_name": "Bangkok",
+    "active": true
+  },
+  {
+    "hostname": "th-bkk-wg-002",
+    "country_code": "th",
+    "country_name": "Thailand",
+    "city_code": "bkk",
+    "city_name": "Bangkok",
+    "active": true
+  },
+  {
+    "hostname": "tr-ist-wg-001",
+    "country_code": "tr",
+    "country_name": "Turkey",
+    "city_code": "ist",
+    "city_name": "Istanbul",
+    "active": true
+  },
+  {
+    "hostname": "tr-ist-wg-002",
+    "country_code": "tr",
+    "country_name": "Turkey",
+    "city_code": "ist",
+    "city_name": "Istanbul",
+    "active": true
+  },
+  {
+    "hostname": "ua-iev-wg-001",
+    "country_code": "ua",
+    "country_name": "Ukraine",
+    "city_code": "iev",
+    "city_name": "Kyiv",
+    "active": true
+  },
+  {
+    "hostname": "ua-iev-wg-002",
+    "country_code": "ua",
+    "country_name": "Ukraine",
+    "city_code": "iev",
+    "city_name": "Kyiv",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-401",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-402",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-403",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-404",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-405",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-406",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-407",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-atl-wg-408",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "atl",
+    "city_name": "Atlanta, GA",
+    "active": true
+  },
+  {
+    "hostname": "us-bos-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "bos",
+    "city_name": "Boston, MA",
+    "active": true
+  },
+  {
+    "hostname": "us-bos-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "bos",
+    "city_name": "Boston, MA",
+    "active": false
+  },
+  {
+    "hostname": "us-bos-wg-101",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "bos",
+    "city_name": "Boston, MA",
+    "active": true
+  },
+  {
+    "hostname": "us-bos-wg-102",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "bos",
+    "city_name": "Boston, MA",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-201",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-202",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-203",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-301",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-302",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-303",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-304",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-305",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-306",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-307",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-308",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-309",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-310",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-311",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-312",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-313",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-314",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-315",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-chi-wg-316",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "chi",
+    "city_name": "Chicago, IL",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-401",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-402",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-403",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-601",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-602",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-603",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-604",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-701",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-702",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-703",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-704",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-705",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-706",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-707",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-dal-wg-708",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "dal",
+    "city_name": "Dallas, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-101",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-102",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-103",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-201",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-202",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-203",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-204",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-205",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-206",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-207",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-den-wg-208",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "den",
+    "city_name": "Denver, CO",
+    "active": true
+  },
+  {
+    "hostname": "us-det-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "det",
+    "city_name": "Detroit, MI",
+    "active": true
+  },
+  {
+    "hostname": "us-det-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "det",
+    "city_name": "Detroit, MI",
+    "active": true
+  },
+  {
+    "hostname": "us-hou-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "hou",
+    "city_name": "Houston, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-hou-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "hou",
+    "city_name": "Houston, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-hou-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "hou",
+    "city_name": "Houston, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-hou-wg-004",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "hou",
+    "city_name": "Houston, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-004",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-005",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-006",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-007",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-008",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-201",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-202",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-203",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-401",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-402",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-403",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-404",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-405",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-406",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-601",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-602",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-603",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-604",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-605",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-606",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-607",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-608",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-701",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-702",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-703",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-lax-wg-704",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "lax",
+    "city_name": "Los Angeles, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-mia-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mia",
+    "city_name": "Miami, FL",
+    "active": true
+  },
+  {
+    "hostname": "us-mia-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mia",
+    "city_name": "Miami, FL",
+    "active": true
+  },
+  {
+    "hostname": "us-mia-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mia",
+    "city_name": "Miami, FL",
+    "active": true
+  },
+  {
+    "hostname": "us-mia-wg-101",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mia",
+    "city_name": "Miami, FL",
+    "active": true
+  },
+  {
+    "hostname": "us-mia-wg-102",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mia",
+    "city_name": "Miami, FL",
+    "active": true
+  },
+  {
+    "hostname": "us-mia-wg-103",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mia",
+    "city_name": "Miami, FL",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-004",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-005",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-006",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-007",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-008",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-101",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-102",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-103",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-104",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-mkc-wg-105",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "mkc",
+    "city_name": "Kansas City, MO",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-301",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-302",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-303",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-501",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-502",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-503",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": false
+  },
+  {
+    "hostname": "us-nyc-wg-504",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-505",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-506",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-601",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-602",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-603",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-604",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-605",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-606",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-801",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-802",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-803",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-804",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-805",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-806",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-807",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-nyc-wg-808",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "nyc",
+    "city_name": "New York, NY",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-201",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-202",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-203",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-204",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-205",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-206",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-207",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-phx-wg-208",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "phx",
+    "city_name": "Phoenix, AZ",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-101",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-102",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-103",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-201",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-202",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": false
+  },
+  {
+    "hostname": "us-qas-wg-203",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-204",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-301",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-302",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-303",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-304",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-305",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-306",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-307",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-qas-wg-308",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "qas",
+    "city_name": "Ashburn, VA",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-201",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-202",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-203",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-204",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-205",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-206",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-207",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": true
+  },
+  {
+    "hostname": "us-rag-wg-208",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "rag",
+    "city_name": "Raleigh, NC",
+    "active": false
+  },
+  {
+    "hostname": "us-sea-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-401",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-402",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-403",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-404",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-405",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-406",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-407",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sea-wg-408",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sea",
+    "city_name": "Seattle, WA",
+    "active": true
+  },
+  {
+    "hostname": "us-sfo-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sfo",
+    "city_name": "San Francisco, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sfo-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sfo",
+    "city_name": "San Francisco, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-003",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-401",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-402",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-501",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-502",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-503",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-504",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-505",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-506",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-507",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-sjc-wg-508",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "sjc",
+    "city_name": "San Jose, CA",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-301",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-302",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-303",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-304",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-305",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-306",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-307",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-slc-wg-308",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "slc",
+    "city_name": "Salt Lake City, UT",
+    "active": true
+  },
+  {
+    "hostname": "us-txc-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "txc",
+    "city_name": "McAllen, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-txc-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "txc",
+    "city_name": "McAllen, TX",
+    "active": true
+  },
+  {
+    "hostname": "us-uyk-wg-201",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "uyk",
+    "city_name": "Secaucus, NJ",
+    "active": true
+  },
+  {
+    "hostname": "us-uyk-wg-202",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "uyk",
+    "city_name": "Secaucus, NJ",
+    "active": true
+  },
+  {
+    "hostname": "us-was-wg-001",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "was",
+    "city_name": "Washington DC",
+    "active": true
+  },
+  {
+    "hostname": "us-was-wg-002",
+    "country_code": "us",
+    "country_name": "USA",
+    "city_code": "was",
+    "city_name": "Washington DC",
+    "active": true
+  },
+  {
+    "hostname": "za-jnb-wg-001",
+    "country_code": "za",
+    "country_name": "South Africa",
+    "city_code": "jnb",
+    "city_name": "Johannesburg",
+    "active": true
+  },
+  {
+    "hostname": "za-jnb-wg-002",
+    "country_code": "za",
+    "country_name": "South Africa",
+    "city_code": "jnb",
+    "city_name": "Johannesburg",
+    "active": true
+  }
+]

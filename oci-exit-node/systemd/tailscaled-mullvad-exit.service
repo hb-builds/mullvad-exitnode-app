@@ -1,0 +1,23 @@
+[Unit]
+Description=Tailscale agent for the isolated Mullvad exit gateway
+Requires=mullvad-exit-network.service
+Wants=mullvad-exit-wireguard.service
+After=mullvad-exit-network.service mullvad-exit-wireguard.service
+ConditionPathExists=/etc/mullvad-exit/wg-mullvad.conf
+
+[Service]
+Type=notify
+NetworkNamespacePath=/run/netns/mullvad-exit
+BindReadOnlyPaths=/etc/netns/mullvad-exit/resolv.conf:/etc/resolv.conf
+ExecStart=/usr/sbin/tailscaled --state=/var/lib/tailscale-mullvad-exit/tailscaled.state --socket=/run/tailscale-mullvad-exit/tailscaled.sock --tun=tailscale0 --port=41642
+ExecStopPost=/usr/sbin/tailscaled --state=/var/lib/tailscale-mullvad-exit/tailscaled.state --socket=/run/tailscale-mullvad-exit/tailscaled.sock --cleanup
+Restart=on-failure
+RuntimeDirectory=tailscale-mullvad-exit
+RuntimeDirectoryMode=0755
+StateDirectory=tailscale-mullvad-exit
+StateDirectoryMode=0700
+CacheDirectory=tailscale-mullvad-exit
+CacheDirectoryMode=0750
+
+[Install]
+WantedBy=multi-user.target

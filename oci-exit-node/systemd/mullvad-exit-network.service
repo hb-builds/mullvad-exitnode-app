@@ -1,0 +1,15 @@
+[Unit]
+Description=Isolated Mullvad exit gateway networking
+Wants=network-online.target
+After=network-online.target netfilter-persistent.service docker.service
+Before=mullvad-exit-wireguard.service tailscaled-mullvad-exit.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/libexec/mullvad-exit-network up
+ExecReload=/usr/local/libexec/mullvad-exit-network up
+ExecStop=/usr/local/libexec/mullvad-exit-network down
+
+[Install]
+WantedBy=multi-user.target

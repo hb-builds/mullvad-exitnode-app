@@ -1,0 +1,117 @@
+#!/usr/bin/env bash
+set -euo pipefail
+NS=mullvad-exit
+HOST_IF=mv-exit-host
+NS_IF=mv-exit-up
+WG_IF=wg-mullvad
+TABLE=51888
+HOST_CHAIN=MVEXIT-FWD
+NAT_CHAIN=MVEXIT-NAT
+
+[[ $EUID == 0 ]] || { echo 'Run as root' >&2; exit 1; }
+exec 9>/run/lock/mullvad-exit-network.lock
+flock 9
+
+ns() { ip netns exec "$NS" "$@"; }
+ipt() { iptables -w 10 "$@"; }
+
+case "${1:-}" in
+up)
+    # Refuse to enable host-wide forwarding as an implicit side effect.
+    [[ $(sysctl -n net.ipv4.ip_forward) == 1 ]] || {
+        echo 'Host IPv4 forwarding must be explicitly enabled first.' >&2; exit 1;
+    }
+    UNDERLAY=$(ip -4 route get 1.1.1.1 | awk '{for (i=1;i<=NF;i++) if ($i=="dev") {print $(i+1); exit}}')
+    [[ $UNDERLAY =~ ^[a-zA-Z0-9_.:-]+$ && $UNDERLAY != "$HOST_IF" ]] || exit 1
+    ip netns list | awk '{print $1}' | grep -Fxq "$NS" || ip netns add "$NS"
+    if ! ip link show "$HOST_IF" >/dev/null 2>&1; then
+        ip link add "$HOST_IF" type veth peer name "$NS_IF"
+        ip link set "$NS_IF" netns "$NS"
+    fi
+    ip address replace 10.203.254.1/30 dev "$HOST_IF"
+    ip link set "$HOST_IF" up
+    ip -n "$NS" address replace 10.203.254.2/30 dev "$NS_IF"
+    ip -n "$NS" link set "$NS_IF" up
+    ip -n "$NS" link set lo up
+    ns ethtool -K "$NS_IF" rx-udp-gro-forwarding on rx-gro-list off
+    ns sysctl -q -w net.ipv4.ip_forward=1 net.ipv6.conf.all.forwarding=1
+    ip -n "$NS" route replace default via 10.203.254.1 dev "$NS_IF"
+    for family in -4 -6; do
+        ip -n "$NS" "$family" route replace unreachable default metric 42760 table "$TABLE"
+        # Keep custom priorities outside Tailscale's reserved 5200-5500 range.
+        while ip -n "$NS" "$family" rule del pref 5300 iif tailscale0 lookup "$TABLE" 2>/dev/null; do :; done
+        if ! ip -n "$NS" "$family" rule show | grep -q '^6000:.*iif tailscale0.*lookup 51888'; then
+            ip -n "$NS" "$family" rule add pref 6000 iif tailscale0 lookup "$TABLE"
+        fi
+    done
+    if ! ip -n "$NS" -4 rule show | grep -q '^5100:.*to 10.64.0.1.*lookup 51888'; then
+        ip -n "$NS" -4 rule add pref 5100 to 10.64.0.1/32 lookup "$TABLE"
+    fi
+    if ! ip -n "$NS" -4 rule show | grep -q '^5110:.*to 100.64.0.0/29.*lookup 51888'; then
+        ip -n "$NS" -4 rule add pref 5110 to 100.64.0.0/29 lookup "$TABLE"
+    fi
+
+    # A single nft transaction replaces only this gateway's table.
+    RULES=$(mktemp)
+    trap 'rm -f "$RULES"' EXIT
+    if ns nft list table inet mullvad_exit >/dev/null 2>&1; then
+        echo 'delete table inet mullvad_exit' >> "$RULES"
+    fi
+    cat >> "$RULES" <<'NFT'
+table inet mullvad_exit {
+    chain input {
+        type filter hook input priority -10; policy drop;
+        iifname "lo" accept
+        iifname "mv-exit-up" ip saddr 100.64.0.0/10 drop
+        iifname "mv-exit-up" ip6 saddr fd7a:115c:a1e0::/48 drop
+        ct state established,related accept
+        iifname "tailscale0" accept
+        iifname "mv-exit-up" udp dport 41642 accept
+        meta l4proto { icmp, ipv6-icmp } accept
+    }
+    chain forward {
+        type filter hook forward priority -10; policy drop;
+        ct state invalid drop
+        iifname "tailscale0" oifname "wg-mullvad" counter accept
+        iifname "wg-mullvad" oifname "tailscale0" ct state established,related counter accept
+        counter drop comment "No forwarded internet traffic may use the uplink"
+    }
+    chain output {
+        type filter hook output priority -10; policy accept;
+        ip daddr 10.64.0.1 oifname != "wg-mullvad" counter drop
+        ip daddr 100.64.0.0/29 oifname != "wg-mullvad" counter drop
+    }
+    chain postrouting {
+        type nat hook postrouting priority 100; policy accept;
+        iifname "tailscale0" oifname "wg-mullvad" masquerade
+    }
+}
+NFT
+    ns nft --check --file "$RULES"
+    ns nft --file "$RULES"
+    if [[ -f /etc/mullvad-exit/dns-mask ]]; then
+        /usr/local/sbin/mullvad-exit dns-apply
+    fi
+
+    ipt -S "$HOST_CHAIN" >/dev/null 2>&1 || ipt -N "$HOST_CHAIN"
+    ipt -C "$HOST_CHAIN" -i "$HOST_IF" -o "$UNDERLAY" -s 10.203.254.2/32 -j ACCEPT 2>/dev/null ||
+        ipt -A "$HOST_CHAIN" -i "$HOST_IF" -o "$UNDERLAY" -s 10.203.254.2/32 -j ACCEPT
+    ipt -C "$HOST_CHAIN" -i "$UNDERLAY" -o "$HOST_IF" -d 10.203.254.2/32 -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT 2>/dev/null ||
+        ipt -A "$HOST_CHAIN" -i "$UNDERLAY" -o "$HOST_IF" -d 10.203.254.2/32 -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+    ipt -C FORWARD -j "$HOST_CHAIN" 2>/dev/null || ipt -I FORWARD 1 -j "$HOST_CHAIN"
+    ipt -t nat -S "$NAT_CHAIN" >/dev/null 2>&1 || ipt -t nat -N "$NAT_CHAIN"
+    ipt -t nat -C "$NAT_CHAIN" -s 10.203.254.2/32 -o "$UNDERLAY" -j MASQUERADE 2>/dev/null ||
+        ipt -t nat -A "$NAT_CHAIN" -s 10.203.254.2/32 -o "$UNDERLAY" -j MASQUERADE
+    ipt -t nat -C POSTROUTING -j "$NAT_CHAIN" 2>/dev/null || ipt -t nat -I POSTROUTING 1 -j "$NAT_CHAIN"
+    echo 'Gateway namespace and blocking routes installed.'
+    ;;
+down)
+    while ipt -C FORWARD -j "$HOST_CHAIN" 2>/dev/null; do ipt -D FORWARD -j "$HOST_CHAIN"; done
+    if ipt -S "$HOST_CHAIN" >/dev/null 2>&1; then ipt -F "$HOST_CHAIN"; ipt -X "$HOST_CHAIN"; fi
+    while ipt -t nat -C POSTROUTING -j "$NAT_CHAIN" 2>/dev/null; do ipt -t nat -D POSTROUTING -j "$NAT_CHAIN"; done
+    if ipt -t nat -S "$NAT_CHAIN" >/dev/null 2>&1; then ipt -t nat -F "$NAT_CHAIN"; ipt -t nat -X "$NAT_CHAIN"; fi
+    ip link delete "$HOST_IF" 2>/dev/null || true
+    if ip netns list | awk '{print $1}' | grep -Fxq "$NS"; then ip netns delete "$NS"; fi
+    ;;
+*) echo 'Usage: mullvad-exit-network up|down' >&2; exit 2 ;;
+esac

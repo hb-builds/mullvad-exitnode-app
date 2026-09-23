@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+set -euo pipefail
+[[ $EUID == 0 ]] || { echo 'Run as root.' >&2; exit 1; }
+[[ $# -ge 1 ]] || { echo 'Usage: sudo scripts/install-controller PHONE_TAILSCALE_IPV4 [OTHER_ALLOWED_IPV4 ...]' >&2; exit 1; }
+SOURCE=$(cd "$(dirname "$0")/.." && pwd)
+command -v conntrack >/dev/null
+ADDRESS=$(tailscale --socket=/run/tailscale-mullvad-exit/tailscaled.sock ip -4)
+python3 "$SOURCE/scripts/pairing-config.py" validate "$ADDRESS" "$@"
+getent passwd mullvad-controller >/dev/null || useradd --system --user-group --no-create-home --shell /usr/sbin/nologin mullvad-controller
+install -d -o root -g mullvad-controller -m 750 /etc/mullvad-controller
+install -m 755 "$SOURCE/scripts/control.py" /usr/local/sbin/mullvad-exit
+install -m 644 "$SOURCE/scripts/control.py" /usr/local/libexec/mullvad-exit-control.py
+install -m 755 "$SOURCE/scripts/network" /usr/local/libexec/mullvad-exit-network
+install -m 755 "$SOURCE/scripts/broker.py" /usr/local/libexec/mullvad-controller-broker.py
+install -m 755 "$SOURCE/scripts/api.py" /usr/local/libexec/mullvad-controller-api.py
+install -m 600 "$SOURCE/locations.json" /etc/mullvad-exit/catalog.json
+install -m 644 "$SOURCE"/systemd/mullvad-controller-*.service /etc/systemd/system/
+if [[ -f /etc/mullvad-controller/server.key ]]; then
+    openssl x509 -in /etc/mullvad-controller/server.crt -noout -checkip "$ADDRESS" >/dev/null || {
+        echo 'Existing certificate does not match this node. Back up and rotate controller credentials before changing its address.' >&2; exit 1;
+    }
+else
+    umask 077
+    openssl req -x509 -newkey ec -pkeyopt ec_paramgen_curve:P-256 -sha256 -nodes -days 1825 \
+      -keyout /etc/mullvad-controller/server.key -out /etc/mullvad-controller/server.crt \
+      -subj '/CN=Mullvad Exit Node controller' -addext "subjectAltName=IP:$ADDRESS" >/dev/null 2>&1
+fi
+python3 "$SOURCE/scripts/pairing-config.py" write "$ADDRESS" "$@"
+chown root:mullvad-controller /etc/mullvad-controller/{server.key,server.crt,access.json}
+chmod 640 /etc/mullvad-controller/{server.key,server.crt,access.json}
+chmod 600 /etc/mullvad-controller/pairing.json
+/usr/local/libexec/mullvad-exit-network up
+if [[ ! -f /etc/mullvad-exit/dns-mask ]]; then
+    /usr/local/sbin/mullvad-exit dns 7
+fi
+systemctl daemon-reload
+systemd-analyze verify /etc/systemd/system/mullvad-controller-{broker,api}.service
+systemctl enable --now mullvad-controller-broker.service mullvad-controller-api.service
+systemctl restart mullvad-controller-api.service
+printf 'Controller installed. Securely transfer /etc/mullvad-controller/pairing.json to your phone, import it, then delete the transfer copies.\n'

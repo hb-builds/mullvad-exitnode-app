@@ -1,0 +1,42 @@
+# Build outputs
+build/
+out/
+*.apk
+*.aab
+*.apks
+
+# Signing keys and certificates
+*.jks
+*.keystore
+*.p12
+*.key
+*.pem
+
+# Local configuration and secrets
+local.properties
+.env
+.env.*
+
+# IDE and tool state
+.gradle/
+.idea/
+*.iml
+.cxx/
+externalNativeBuild/
+__pycache__/
+*.py[cod]
+
+# Local files
+.DS_Store
+*.log
+*.swp
+*.swo
+
+# Deployment credentials and downloaded VPN profiles
+**/pairing*.json
+**/access.json
+*.conf
+*.zip
+**/signing/
+**/password
+**/server.crt

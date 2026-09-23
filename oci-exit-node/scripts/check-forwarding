@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+# Real packet tests with a disposable client, before tailscaled owns tailscale0.
+set -euo pipefail
+NS=mullvad-exit
+CLIENT=mv-exit-probe
+MODE=${1:-blocked}
+[[ $EUID == 0 && ( $MODE == blocked || $MODE == connected ) ]] || exit 2
+if ip -n "$NS" link show tailscale0 >/dev/null 2>&1; then
+    echo 'Stop the gateway Tailscale service before running this check.' >&2
+    exit 1
+fi
+ip netns list | awk '{print $1}' | grep -Fxq "$CLIENT" && exit 1
+cleanup() {
+    ip -n "$NS" -4 route del default metric 5 table 51888 2>/dev/null || true
+    ip -n "$NS" -6 route del default metric 5 table 51888 2>/dev/null || true
+    ip -n "$NS" link delete tailscale0 2>/dev/null || true
+    ip netns delete "$CLIENT" 2>/dev/null || true
+}
+trap cleanup EXIT
+ip netns add "$CLIENT"
+ip -n "$NS" link add tailscale0 type veth peer name mv-probe
+ip -n "$NS" link set mv-probe netns "$CLIENT"
+ip -n "$NS" addr add 100.123.255.1/30 dev tailscale0
+ip -n "$NS" addr add fd7a:115c:a1e0:ffff::1/64 dev tailscale0 nodad
+ip -n "$NS" link set tailscale0 up mtu 1280
+ip -n "$CLIENT" addr add 100.123.255.2/30 dev mv-probe
+ip -n "$CLIENT" addr add fd7a:115c:a1e0:ffff::2/64 dev mv-probe nodad
+ip -n "$CLIENT" link set mv-probe up mtu 1280
+ip -n "$CLIENT" link set lo up
+ip -n "$CLIENT" route add default via 100.123.255.1
+ip -n "$CLIENT" -6 route add default via fd7a:115c:a1e0:ffff::1
+probe() { ip netns exec "$CLIENT" "$@"; }
+gateway() { ip netns exec "$NS" "$@"; }
+
+if [[ $MODE == connected ]]; then
+    for family in 4 6; do
+        host=am.i.mullvad.net; record=A
+        if [[ $family == 6 ]]; then host=ipv6.am.i.mullvad.net; record=AAAA; fi
+        address=$(probe dig +short +time=3 +tries=1 @10.64.0.1 "$host" "$record" | tail -1)
+        [[ -n $address ]] || { echo "Missing $record answer for $host" >&2; exit 1; }
+        if [[ $family == 6 ]]; then address="[$address]"; fi
+        RESULT=$(probe curl -fsS --connect-timeout 10 --max-time 20 \
+            --resolve "$host:443:$address" "https://$host/json")
+        python3 -c 'import json,sys; r=json.loads(sys.argv[1]); assert r["mullvad_exit_ip"]; print(json.dumps({k:r.get(k) for k in ("ip","country","city","mullvad_exit_ip","mullvad_exit_ip_hostname")}))' "$RESULT"
+    done
+    gateway dig +short +time=3 +tries=1 am.i.mullvad.net A
+    echo 'PASS: forwarded IPv4/IPv6 and gateway DNS use Mullvad.'
+else
+    if ip -n "$NS" route get 1.1.1.1 from 100.123.255.2 iif tailscale0 >/dev/null 2>&1; then
+        echo 'FAIL: IPv4 route should be unreachable.' >&2; exit 1
+    fi
+    if ip -n "$NS" -6 route get 2606:4700:4700::1111 from fd7a:115c:a1e0:ffff::2 iif tailscale0 >/dev/null 2>&1; then
+        echo 'FAIL: IPv6 route should be unreachable.' >&2; exit 1
+    fi
+    if probe ping -4 -c 1 -W 1 1.1.1.1 >/dev/null 2>&1; then exit 1; fi
+    if probe ping -6 -c 1 -W 1 2606:4700:4700::1111 >/dev/null 2>&1; then exit 1; fi
+    if gateway dig +time=1 +tries=1 @10.64.0.1 example.com >/dev/null 2>&1; then
+        echo 'FAIL: DNS remained reachable without WireGuard.' >&2; exit 1
+    fi
+    echo 'PASS: missing tunnel blocks IPv4, IPv6, and gateway DNS.'
+
+    # Deliberately introduce wrong routes to prove the firewall is a separate
+    # layer of protection. They are removed by the EXIT trap on every path.
+    ip -n "$NS" route add default via 10.203.254.1 dev mv-exit-up metric 5 table 51888
+    ip -n "$NS" -6 route add default dev mv-exit-up metric 5 table 51888
+    gateway nft reset counters table inet mullvad_exit >/dev/null
+    if probe ping -4 -c 1 -W 1 1.1.1.1 >/dev/null 2>&1; then exit 1; fi
+    if probe ping -6 -c 1 -W 1 2606:4700:4700::1111 >/dev/null 2>&1; then exit 1; fi
+    gateway nft -j list chain inet mullvad_exit forward | python3 -c '
+import json,sys
+rules=[x["rule"] for x in json.load(sys.stdin)["nftables"] if "rule" in x]
+drops=[r for r in rules if r.get("comment", "").startswith("No forwarded")]
+packets=sum(e["counter"]["packets"] for r in drops for e in r["expr"] if "counter" in e)
+assert packets >= 2, f"Expected IPv4 and IPv6 firewall drops; got {packets}"
+print(f"PASS: independent firewall blocked {packets} packets despite deliberately incorrect routes.")'
+fi

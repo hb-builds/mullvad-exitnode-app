@@ -1,0 +1,5 @@
+*.conf
+*.key
+*.pcap
+*.zip
+secrets/

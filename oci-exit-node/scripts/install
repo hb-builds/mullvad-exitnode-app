@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+[[ $EUID == 0 ]] || { echo 'Run as root' >&2; exit 1; }
+SOURCE=$(cd "$(dirname "$0")/.." && pwd)
+install -d -m 755 /usr/local/libexec /etc/netns/mullvad-exit
+install -d -m 700 /etc/mullvad-exit
+install -m 755 "$SOURCE/scripts/network" /usr/local/libexec/mullvad-exit-network
+install -m 755 "$SOURCE/scripts/tunnel" /usr/local/libexec/mullvad-exit-tunnel
+install -m 755 "$SOURCE/scripts/import-config.py" /usr/local/libexec/mullvad-exit-import
+install -m 755 "$SOURCE/scripts/import-profiles.py" /usr/local/libexec/mullvad-exit-import-profiles
+install -m 755 "$SOURCE/scripts/control.py" /usr/local/sbin/mullvad-exit
+install -m 644 "$SOURCE"/systemd/*.service /etc/systemd/system/
+printf 'nameserver 10.64.0.1\noptions timeout:2 attempts:2\n' > /etc/netns/mullvad-exit/resolv.conf
+chmod 644 /etc/netns/mullvad-exit/resolv.conf
+printf 'net.ipv4.ip_forward = 1\n' > /etc/sysctl.d/90-mullvad-exit.conf
+sysctl -q -p /etc/sysctl.d/90-mullvad-exit.conf
+systemctl daemon-reload
+systemd-analyze verify /etc/systemd/system/mullvad-exit-network.service \
+    /etc/systemd/system/mullvad-exit-wireguard.service \
+    /etc/systemd/system/tailscaled-mullvad-exit.service
+systemctl enable --now mullvad-exit-network.service
+echo 'Gateway components installed. Check tunnel health and Tailscale authentication before client use.'

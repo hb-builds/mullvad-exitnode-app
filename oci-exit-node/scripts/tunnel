@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+set -euo pipefail
+NS=mullvad-exit
+WG_IF=wg-mullvad
+CONF=/etc/mullvad-exit/wg-mullvad.conf
+TABLE=51888
+[[ $EUID == 0 ]] || { echo 'Run as root' >&2; exit 1; }
+clear_probe_rules() {
+    for family in -4 -6; do
+        while ip -n "$NS" "$family" rule del pref 6100 lookup "$TABLE" 2>/dev/null; do :; done
+    done
+}
+cleanup_partial() {
+    ip -n "$NS" link delete "$WG_IF" 2>/dev/null || true
+    clear_probe_rules
+}
+case "${1:-}" in
+up)
+    [[ -f "$CONF" ]] || { echo "Missing $CONF" >&2; exit 1; }
+    # If setup fails after link creation, remove the partial interface. The
+    # permanent unreachable routes and namespace firewall remain in place.
+    trap cleanup_partial ERR
+    clear_probe_rules
+    ip netns exec "$NS" wg-quick up "$CONF"
+    ip -n "$NS" -4 route replace default dev "$WG_IF" metric 10 table "$TABLE"
+    ip -n "$NS" -4 route replace 10.64.0.1/32 dev "$WG_IF"
+    if ip -n "$NS" -6 address show dev "$WG_IF" scope global | grep -q inet6; then
+        ip -n "$NS" -6 route replace default dev "$WG_IF" metric 10 table "$TABLE"
+    fi
+    # Health checks explicitly bind to the WireGuard address. Ordinary
+    # Tailscale transport sockets retain the namespace's normal uplink.
+    for family in -4 -6; do
+        while read -r address; do
+            ip -n "$NS" "$family" rule add pref 6100 from "$address" lookup "$TABLE"
+        done < <(ip -n "$NS" -o "$family" addr show dev "$WG_IF" scope global | awk '{print $4}')
+    done
+    trap - ERR
+    ;;
+down)
+    if ip -n "$NS" link show "$WG_IF" >/dev/null 2>&1; then
+        ip netns exec "$NS" wg-quick down "$CONF"
+    fi
+    clear_probe_rules
+    ;;
+*) echo 'Usage: mullvad-exit-tunnel up|down' >&2; exit 2 ;;
+esac

@@ -1,0 +1,15 @@
+[Unit]
+Description=Mullvad WireGuard tunnel for the isolated exit gateway
+Requires=mullvad-exit-network.service
+After=mullvad-exit-network.service
+Before=tailscaled-mullvad-exit.service
+ConditionPathExists=/etc/mullvad-exit/wg-mullvad.conf
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/libexec/mullvad-exit-tunnel up
+ExecStop=/usr/local/libexec/mullvad-exit-tunnel down
+
+[Install]
+WantedBy=multi-user.target
